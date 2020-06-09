@@ -10,4 +10,5 @@
         <p class="text">{{ post.body|truncatewords:30 }}</p>
     </div>
     {% endfor %}
+    {% include "pagination.html" with page=posts %}
 {% endblock %}
