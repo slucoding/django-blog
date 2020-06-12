@@ -6,26 +6,35 @@ body {
 #main {
   display: flex;
   flex-direction: row;
+  margin: 0 10px;
 }
 
 #content {
   flex-basis: 79%;
   /* padding: 5px 20px 5px; */
-  margin: 10px 10px 0px;
+  margin: 10px 10px 0px 0px;
+}
+
+#sidebar {
+  flex-basis: 20%;
+  background-color: #dff8fc;
+  border: 2px solid #87d0ec;
+  margin: 10px 0;
+  padding: 5px 20px 5px;
 }
 
 #post-block {
   background-color: #dff8fc;
   border: 2px solid #87d0ec;
   margin-bottom: 10px;
-  padding: 5px 20px 5px;
+  padding: 20px;
 }
 
-#content h1 {
+#post-block h1 {
   color: #417a94;
 }
 
-#content h2 a {
+#post-block h2 a {
   color: #53add1;
 }
 
@@ -41,10 +50,49 @@ body {
   text-align: justify;
 }
 
-#sidebar {
-  flex-basis: 15%;
-  background-color: #dff8fc;
-  border: 2px solid #87d0ec;
-  margin: 10px 0;
-  padding: 5px 20px 5px;
+/* forms */
+#post-block label {
+  float: left;
+  clear: both;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+#post-block input#id_name {
+  margin-left: 30px;
+}
+
+#post-block input#id_email {
+  margin-left: 30px;
+}
+
+#post-block input#id_to {
+  margin-left: 53px;
+}
+
+#post-block textarea#id_comments {
+  font-size: 12px;
+}
+
+#post-block input[type="submit"] {
+  font-weight: bold;
+  background: #00abff;
+  color: #fff;
+  padding: 10px 20px;
+  margin-left: 78px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#post-block .errorlist {
+  color: #cc0033;
+  float: left;
+  clear: both;
+  padding-left: 10px;
+}
+
+#post-block .link a {
+  font-weight: bold;
+  font-style: italic;
+  color: #f15959;
 }
