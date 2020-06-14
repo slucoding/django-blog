@@ -96,3 +96,21 @@ body {
   font-style: italic;
   color: #f15959;
 }
+
+/* comment */
+div.comment {
+  background-color: aquamarine;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+p.info {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#content form {
+  background-color: #fad3d3;
+  padding: 10px;
+  margin-bottom: 10px;
+}
