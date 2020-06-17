@@ -114,3 +114,19 @@ p.info {
   padding: 10px;
   margin-bottom: 10px;
 }
+
+/* tags */
+#post-block .tags span {
+  display: inline-block;
+  background-color: rgb(184, 228, 248);
+  margin: 3px 5px;
+  padding: 3px 5px;
+}
+
+/* recommended-posts */
+#recommended-post-block {
+  background-color: #dff8fc;
+  border: 2px solid #87d0ec;
+  margin-bottom: 10px;
+  padding: 20px;
+}

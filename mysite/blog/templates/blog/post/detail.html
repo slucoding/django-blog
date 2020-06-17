@@ -11,7 +11,17 @@
     <p class="link">
       <a href="{% url 'blog:post_share' post.id %}">Share this post</a>
     </p>
+  </div>
 
+  <div id="recommended-post-block">
+    <h2>Similar posts</h2>
+    {% for post in similar_posts %}
+      <p>
+      <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
+      </p>
+    {% empty %}
+      There are no similar posts yet.
+    {% endfor %}
   </div>
 
   {% with comments.count as total_comments %}
